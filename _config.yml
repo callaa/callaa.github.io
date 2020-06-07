@@ -1,0 +1,16 @@
+title: Calle's Personal Projects
+description: Project logs and notes.
+baseurl: ""
+url: ""
+github_username:  callaa
+author:
+  name: Calle Laakkonen
+excerpt_separator: "<!-- more -->"
+
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-feed
+
+feed:
+  excerpt_only: true
+

@@ -133,12 +133,11 @@ Now the remote can be bound the our own group:
 
 The remote should now be able to control the light(s), even without the coordinator!
 
-Note: remember to add `report: true` to zigbee2mqtt configuration file, so state changes
-are reported back when the remote is used.
-
 Pairing the FYRTUR curtains (and binding its remote) is done the same way as the lights.
 
 ## Light groups in Home Assistant
+
+**Edit**: *As of Zigbee2mqtt version 1.20, this section is obsolete. Light groups now work without any manual configuration.*
 
 A light group is a group of lights that act like a single device. Useful when you have a light fixture that holds multiple bulbs.
 
@@ -160,8 +159,8 @@ individual lights:
 		- light.lamp2
 
 However, zigbee2mqtt exposes topics for directly controlling a zigbee group.
-It does not publish an autodiscovery message for Home Assistant, so you will need to configure
-it manually (see also the [official documentation](https://www.zigbee2mqtt.io/integration/home_assistant.html))
+~~It does not publish an autodiscovery message for Home Assistant, so you will need to configure
+it manually~~ (see also the [official documentation](https://www.zigbee2mqtt.io/integration/home_assistant.html))
 by putting something like this in your lights.yaml file: 
 
 	- platform: mqtt

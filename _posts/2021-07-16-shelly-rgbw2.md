@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Home automation journal #5 - A DIY floor lamp light with Shelly RGBW2
+title: "Home automation journal #5 - A DIY floor lamp light with Shelly RGBW2"
 description: Building a floor lamp using a Shelly RGBW2 LED controller with a custom firmware
 date:   2021-07-16 16:30:00 +0300
 tags: home-automation

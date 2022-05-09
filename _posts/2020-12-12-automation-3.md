@@ -77,6 +77,9 @@ It's a good idea to rename it to something descriptive:
 
 To use the light with a remote control, adding it to a [group](https://www.zigbee2mqtt.io/information/groups.html)
 appears to be necessary.
+
+**Edit:** *The firmware on newer remotes has changed. It seems that they no longer support groups, but can be bound to more than one individual device.*
+
 Create a new group with:
 
     Topic: zigbee2mqtt/bridge/config/add_group
@@ -112,6 +115,8 @@ For some reason, the remotes can be a bit tricky to pair, with the interview fai
 multiple times before it goes through, especially if low on battery.
 
 Rename remote the same was as the light above. I like to attach a little name sticker to the back cover to identify them.
+
+**Edit**: *the following info may be obsolete. It appears that newer remotes (or ones upgraded to the latest firmware) must be bound to individual devices rather than groups.*
 
 Next, the remote must be [bound](https://www.zigbee2mqtt.io/information/binding.html) to the group. The IKEA remotes
 are bound to a random group by by default, so we need to unbind it first for everything to work right:
